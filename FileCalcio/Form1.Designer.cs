@@ -34,8 +34,7 @@
             btn_squadraMaxGol = new Button();
             lst_elenco = new ListBox();
             pnl_entries = new Panel();
-            txt_ricerca = new TextBox();
-            lbl_ricerca = new Label();
+            btn_ricerca = new Button();
             btn_aggiungi = new Button();
             txt_golOspite = new TextBox();
             lbl_golOspite = new Label();
@@ -100,19 +99,18 @@
             // 
             // lst_elenco
             // 
-            lst_elenco.Font = new Font("Monospac821 BT", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lst_elenco.Font = new Font("Consolas", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lst_elenco.FormattingEnabled = true;
-            lst_elenco.ItemHeight = 16;
+            lst_elenco.ItemHeight = 15;
             lst_elenco.Location = new Point(6, 112);
             lst_elenco.Name = "lst_elenco";
-            lst_elenco.Size = new Size(767, 260);
+            lst_elenco.Size = new Size(767, 259);
             lst_elenco.TabIndex = 1;
             // 
             // pnl_entries
             // 
             pnl_entries.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pnl_entries.Controls.Add(txt_ricerca);
-            pnl_entries.Controls.Add(lbl_ricerca);
+            pnl_entries.Controls.Add(btn_ricerca);
             pnl_entries.Controls.Add(btn_aggiungi);
             pnl_entries.Controls.Add(txt_golOspite);
             pnl_entries.Controls.Add(lbl_golOspite);
@@ -127,23 +125,16 @@
             pnl_entries.Size = new Size(770, 103);
             pnl_entries.TabIndex = 0;
             // 
-            // txt_ricerca
+            // btn_ricerca
             // 
-            txt_ricerca.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_ricerca.Location = new Point(184, 74);
-            txt_ricerca.Name = "txt_ricerca";
-            txt_ricerca.Size = new Size(155, 25);
-            txt_ricerca.TabIndex = 9;
-            txt_ricerca.TextChanged += txt_ricerca_TextChanged;
-            // 
-            // lbl_ricerca
-            // 
-            lbl_ricerca.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lbl_ricerca.Location = new Point(12, 77);
-            lbl_ricerca.Name = "lbl_ricerca";
-            lbl_ricerca.Size = new Size(166, 23);
-            lbl_ricerca.TabIndex = 8;
-            lbl_ricerca.Text = "Ricerca squadra (o vuoto):";
+            btn_ricerca.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btn_ricerca.Location = new Point(12, 68);
+            btn_ricerca.Name = "btn_ricerca";
+            btn_ricerca.Size = new Size(93, 32);
+            btn_ricerca.TabIndex = 8;
+            btn_ricerca.Text = "RICERCA";
+            btn_ricerca.UseVisualStyleBackColor = true;
+            btn_ricerca.Click += btn_ricerca_Click;
             // 
             // btn_aggiungi
             // 
@@ -253,10 +244,9 @@
         private Label lbl_golCasa;
         private Button btn_aggiungi;
         private ListBox lst_elenco;
-        private Label lbl_ricerca;
-        private TextBox txt_ricerca;
         private Button btn_squadraMaxGol;
         private Button btn_golTotali;
         private Button btn_partitaMaxGol;
+        private Button btn_ricerca;
     }
 }

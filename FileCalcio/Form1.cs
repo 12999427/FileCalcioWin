@@ -43,7 +43,7 @@ namespace FileCalcio
             InitializeComponent();
             ordineDati = LoadFile(path);
             SaveFile(path, ordineDati);
-            ShowData(ordineDati);
+            ShowData(ordineDati, true, "");
 
         }
 
@@ -173,38 +173,61 @@ namespace FileCalcio
             SaveFile(path, ordine[0], ordine[1], ordine[2], ordine[3]);
         }
 
-        private void ShowData(int[] ordine)
+        private (string[], int) ShowData(int[] ordine, bool aggiungi, string cerca)
         {
-            string search = txt_ricerca.Text;
-            bool filter = txt_ricerca.Text != "";
+            bool filter = cerca != "";
 
-            lst_elenco.Items.Clear();
+            if (aggiungi)
+            {
+                lst_elenco.Items.Clear();
+            }
+
             string[] nomiCampi = new string[4] { "SquadraCasa", "SquadraOspite", "GolCasa", "GolOspite" };
-            lst_elenco.Items.Add(PadString(new string[4] {
+            string[] output = new string[100];
+            int maxOut = 0;
+
+            output[maxOut] = PadString(new string[4] {
                 getCampo(nomiCampi, ordine, 0),
                 getCampo(nomiCampi, ordine, 1),
                 getCampo(nomiCampi, ordine, 2),
                 getCampo(nomiCampi, ordine, 3),
-            }));
+            });
+
+            if (aggiungi)
+            {
+                lst_elenco.Items.Add(output[maxOut]);
+            }
+
+            maxOut++;
 
             for (int i = 0; i < partiteLen; i++)
             {
-                if (!filter || partite[i].SquadraCasa.ToLower().Contains(search.ToLower()) || partite[i].SquadraOspite.ToLower().Contains(search.ToLower())) //se la ricerca è applicata, filtra
+                string[] valori = new string[4] {
+                    partite[i].SquadraCasa.ToString(),
+                    partite[i].SquadraOspite.ToString(),
+                    partite[i].GolCasa.ToString(),
+                    partite[i].GolOspite.ToString()
+                };
+
+                if (!filter || valori[0].ToLower().Contains(cerca.ToLower()) || valori[1].ToLower().Contains(cerca.ToLower()))
                 {
-                    string[] valori = new string[4] {
-                        partite[i].SquadraCasa.ToString(),
-                        partite[i].SquadraOspite.ToString(),
-                        partite[i].GolCasa.ToString(),
-                        partite[i].GolOspite.ToString()
-                    };
-                    lst_elenco.Items.Add(PadString(new string[4] {
-                        getCampo(valori, ordine, 0),
-                        getCampo(valori, ordine, 1),
-                        getCampo(valori, ordine, 2),
-                        getCampo(valori, ordine, 3),
-                    }));
+                    output[maxOut] = PadString(new string[4] {
+                            getCampo(valori, ordine, 0),
+                            getCampo(valori, ordine, 1),
+                            getCampo(valori, ordine, 2),
+                            getCampo(valori, ordine, 3),
+                        });
+
+                    if (aggiungi)
+                    {
+                        lst_elenco.Items.Add(output[maxOut]);
+                    }
+
+                    maxOut++;
                 }
             }
+
+            return (output, maxOut);
         }
 
         private string PadString(string[] txt)
@@ -222,7 +245,7 @@ namespace FileCalcio
             partite[partiteLen++] = new Partita(squadraCasa, squadraOspite, golCasa, golOspite);
             lst_elenco.SelectedIndex = -1;
             SaveFile(path, ordineDati);
-            ShowData(ordineDati);
+            ShowData(ordineDati, true, "");
         }
 
         private int getGolTotali()
@@ -327,9 +350,27 @@ namespace FileCalcio
 
         }
 
-        private void txt_ricerca_TextChanged(object sender, EventArgs e)
+        private void Popup()
         {
-            ShowData(ordineDati);
+            using (InputPromptWin ipw = new InputPromptWin())
+            {
+                if (ipw.ShowDialog() == DialogResult.OK)
+                {
+                    string squadraCercata = ipw.InputTextVal;
+
+                    (string[] testo, int max) = ShowData(ordineDati, false, squadraCercata);
+
+                    string content = "";
+
+                    for (int i = 0; i < max; i++)
+                    {
+                        content += testo[i] + "\n";
+                    }
+
+
+                    MessageBox.Show(content);
+                }
+            }
         }
 
         private void btn_squadraMaxGol_Click(object sender, EventArgs e)
@@ -346,9 +387,14 @@ namespace FileCalcio
         private void btn_partitaMaxGol_Click(object sender, EventArgs e)
         {
             int index = getPartitaGolMax();
-            lst_elenco.SelectedIndex = txt_ricerca.Text == "" ? index + 1 : -1; //per intestazione
+            lst_elenco.SelectedIndex = index + 1; //per intestazione
             Partita partita = partite[index];
             MessageBox.Show($"La partita con più gol è {partita.SquadraCasa} vs {partita.SquadraOspite} con {partita.GolCasa} : {partita.GolOspite}");
+        }
+
+        private void btn_ricerca_Click(object sender, EventArgs e)
+        {
+            Popup();
         }
     }
 }
