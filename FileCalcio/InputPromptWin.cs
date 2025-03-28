@@ -22,12 +22,13 @@ namespace FileCalcio
         private void btn_OK_Click(object sender, EventArgs e)
         {
             InputTextVal = txt_testoRicerca.Text;
-            DialogueResult = DialogueResult.OK;
+            DialogResult = DialogResult.OK;
             Close();
         }
 
         private void btn_Annulla_Click(object sender, EventArgs e)
         {
+            DialogResult = DialogResult.Cancel;
             Close();
         }
     }

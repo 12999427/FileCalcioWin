@@ -1,17 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcio\\FileCalcio\\",
+  "WorkspaceRootPath": "C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcioWin\\FileCalcioWin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E771A77A-01D4-4A4C-A3A1-97A76635563D}|FileCalcio\\FileCalcio.csproj|c:\\users\\gvnnp\\desktop\\c#\\filecalcio\\filecalcio\\filecalcio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E771A77A-01D4-4A4C-A3A1-97A76635563D}|FileCalcio\\FileCalcio.csproj|c:\\users\\gvnnp\\desktop\\c#\\filecalciowin\\filecalciowin\\filecalcio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E771A77A-01D4-4A4C-A3A1-97A76635563D}|FileCalcio\\FileCalcio.csproj|solutionrelative:filecalcio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E771A77A-01D4-4A4C-A3A1-97A76635563D}|FileCalcio\\FileCalcio.csproj|c:\\users\\gvnnp\\desktop\\c#\\filecalcio\\filecalcio\\filecalcio\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E771A77A-01D4-4A4C-A3A1-97A76635563D}|FileCalcio\\FileCalcio.csproj|c:\\users\\gvnnp\\desktop\\c#\\filecalciowin\\filecalciowin\\filecalcio\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E771A77A-01D4-4A4C-A3A1-97A76635563D}|FileCalcio\\FileCalcio.csproj|solutionrelative:filecalcio\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E771A77A-01D4-4A4C-A3A1-97A76635563D}|FileCalcio\\FileCalcio.csproj|C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcio\\FileCalcio\\filecalcio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E771A77A-01D4-4A4C-A3A1-97A76635563D}|FileCalcio\\FileCalcio.csproj|c:\\users\\gvnnp\\desktop\\c#\\filecalciowin\\filecalciowin\\filecalcio\\inputpromptwin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E771A77A-01D4-4A4C-A3A1-97A76635563D}|FileCalcio\\FileCalcio.csproj|solutionrelative:filecalcio\\inputpromptwin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E771A77A-01D4-4A4C-A3A1-97A76635563D}|FileCalcio\\FileCalcio.csproj|c:\\users\\gvnnp\\desktop\\c#\\filecalciowin\\filecalciowin\\filecalcio\\inputpromptwin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E771A77A-01D4-4A4C-A3A1-97A76635563D}|FileCalcio\\FileCalcio.csproj|solutionrelative:filecalcio\\inputpromptwin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E771A77A-01D4-4A4C-A3A1-97A76635563D}|FileCalcio\\FileCalcio.csproj|C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcioWin\\FileCalcioWin\\filecalcio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E771A77A-01D4-4A4C-A3A1-97A76635563D}|FileCalcio\\FileCalcio.csproj|solutionrelative:filecalcio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -22,17 +30,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InputPromptWin.cs",
+              "DocumentMoniker": "C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcioWin\\FileCalcioWin\\FileCalcio\\InputPromptWin.cs",
+              "RelativeDocumentMoniker": "FileCalcio\\InputPromptWin.cs",
+              "ToolTip": "C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcioWin\\FileCalcioWin\\FileCalcio\\InputPromptWin.cs",
+              "RelativeToolTip": "FileCalcio\\InputPromptWin.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T15:11:32.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InputPromptWin.cs [Progettazione]",
+              "DocumentMoniker": "C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcioWin\\FileCalcioWin\\FileCalcio\\InputPromptWin.cs",
+              "RelativeDocumentMoniker": "FileCalcio\\InputPromptWin.cs",
+              "ToolTip": "C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcioWin\\FileCalcioWin\\FileCalcio\\InputPromptWin.cs [Progettazione]",
+              "RelativeToolTip": "FileCalcio\\InputPromptWin.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T15:11:24.6Z",
+              "EditorCaption": " [Progettazione]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcio\\FileCalcio\\FileCalcio\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcioWin\\FileCalcioWin\\FileCalcio\\Form1.cs",
               "RelativeDocumentMoniker": "FileCalcio\\Form1.cs",
-              "ToolTip": "C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcio\\FileCalcio\\FileCalcio\\Form1.cs",
+              "ToolTip": "C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcioWin\\FileCalcioWin\\FileCalcio\\Form1.cs",
               "RelativeToolTip": "FileCalcio\\Form1.cs",
-              "ViewState": "AgIAAEQBAAAAAAAAAAAgwFwBAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAF4BAAAAAAAAAAAowGYBAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T17:52:00.478Z",
               "EditorCaption": ""
@@ -41,9 +74,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcio\\FileCalcio\\FileCalcio\\Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcioWin\\FileCalcioWin\\FileCalcio\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "FileCalcio\\Form1.Designer.cs",
-              "ToolTip": "C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcio\\FileCalcio\\FileCalcio\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcioWin\\FileCalcioWin\\FileCalcio\\Form1.Designer.cs",
               "RelativeToolTip": "FileCalcio\\Form1.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -52,11 +85,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Progettazione]",
-              "DocumentMoniker": "C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcio\\FileCalcio\\FileCalcio\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcioWin\\FileCalcioWin\\FileCalcio\\Form1.cs",
               "RelativeDocumentMoniker": "FileCalcio\\Form1.cs",
-              "ToolTip": "C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcio\\FileCalcio\\FileCalcio\\Form1.cs [Progettazione]",
+              "ToolTip": "C:\\Users\\gvnnp\\Desktop\\C#\\FileCalcioWin\\FileCalcioWin\\FileCalcio\\Form1.cs [Progettazione]",
               "RelativeToolTip": "FileCalcio\\Form1.cs [Progettazione]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-22T17:52:01.717Z",
